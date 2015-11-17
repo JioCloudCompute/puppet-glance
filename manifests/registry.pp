@@ -219,6 +219,7 @@ class glance::registry(
     'keystone_authtoken/auth_host':     value => $auth_host;
     'keystone_authtoken/auth_port':     value => $auth_port;
     'keystone_authtoken/auth_protocol': value => $auth_protocol;
+    'keystone_authtoken/identity_uri':  ensure => absent;
   }
 
   if $auth_admin_prefix {
